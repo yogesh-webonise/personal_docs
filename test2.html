@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<!-- Meta, title, CSS, favicons, etc. -->
+		<meta charset="utf-8">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		<meta content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development." name="description">
+		<meta content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development" name="keywords">
+		<meta content="Mark Otto, Jacob Thornton, and Bootstrap contributors" name="author">
+		<title>CSS · Bootstrap</title>
+		<style>
+			*{margin:0;padding:0;}
+			.container{
+				width:1170px;
+				margin:0 auto;
+				border:1px solid #333;
+			}
+			.clearfix {
+				*zoom: 1;
+			}
+			.clearfix:before,
+			.clearfix:after {
+				display: table;
+				line-height: 0;
+				content: "";
+			}
+			.clearfix:after {
+				clear: both;
+			}
+			.pullleft{float:left;}
+			.pullright{float:right;}
+			[class*="span"] {
+				float: left;
+				min-height: 1px;
+				margin-left: 20px;
+			}
+			.span12 {
+				width: 1170px;
+			}
+			.span11 {
+				width: 1070px;
+			}
+			.span10 {
+				width: 960px;
+			}
+			.span9 {
+				width: 870px;
+			}
+			.span8 {
+				width: 770px;
+			}
+			.span7 {
+				width: 670px;
+			}
+			.span6 {
+				width: 570px;
+			}
+			.span5 {
+				width: 470px;
+			}
+			.span4 {
+				width: 370px;
+			}
+			.span3 {
+				width: 270px;
+			}
+			.span2 {
+				width: 170px;
+			}
+			.span1 {
+				width: 70px;
+			}
+			.width75{width:75%;}
+			.width25{width:25%;}
+			@media (min-width: 980px) and (max-width: 1200px) {
+				.container{
+					width:1170px;
+				}
+			}
+			@media (min-width: 768px) and (max-width: 979px) {
+				.container{
+					width: auto;
+				}
+				.width75{width:75%;}
+				.width25{width:25%;}
+			}
+			@media (min-width: 480px) and (max-width: 767px) {
+				.width75,.width25{width:100%;}
+			}
+			@media (min-width: 320px) and (max-width: 479px) {
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container clearfix">
+			<div class="pullright width75">
+				<div class="pullleft width25" style="background:red;">Navigation</div>
+				<div class="pullleft width25" style="background:yellow;">Social</div>
+			</div>
+			<div class="pullleft width25" style="background:green;height:100px;">image</div>
+			<div class="pullright width75" style="background:blue;">paragraph</div>
+		</div>
+	</body>
+</html>
